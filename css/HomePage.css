@@ -78,7 +78,10 @@ margin-bottom: 50px;
     width:400px; height:400px;
 }
 
-
+#workbuttom a{
+    text-decoration: none;  
+    color:#afafaf;
+}
 #end{
     text-decoration: none;    
     color:#fff;

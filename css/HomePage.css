@@ -79,3 +79,16 @@ margin-bottom: 50px;
 }
 
 
+#end{
+    text-decoration: none;    
+    color:#fff;
+    margin-left: 20px;
+    text-align:center;/* 垂直置中 */
+    line-height: 50px;
+    /* 選單設定 */
+}
+
+#end h5 a{
+    text-decoration: none;    
+    color:#d5d5d5;
+}

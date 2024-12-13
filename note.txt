@@ -7,3 +7,11 @@ npm下載 (終端使用command prompt)
 npm install express
 npm install body-parser
 npm install nedb-promises
+
+
+
+header::before 淡出
+header img 關於圖片
+.content 必備
+header 關於圖片位置
+* 去邊邊

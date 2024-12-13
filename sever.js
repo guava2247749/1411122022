@@ -5,7 +5,7 @@ var server = express();
 var bodyParser = require("body-parser");
 
 //web root
-server.use(express.static(__dirname+"/AgencyProject"));
+server.use(express.static(__dirname+"/Portfolio"));
 
 var DB = require("nedb-promises");
 var ProfolioDB = DB.create(__dirname+"/profolio.db");

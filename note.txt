@@ -1,6 +1,9 @@
+上傳至GitHub
 git config --global user.name guava2247749
 git config --global user.email i27153153@gmail.com
 
+
+npm下載 (終端使用command prompt)
 npm install express
 npm install body-parser
 npm install nedb-promises

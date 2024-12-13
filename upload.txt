@@ -1,7 +1,6 @@
-1.新增終端
-
-2.輸入指令
 git config --global user.name guava2247749
 git config --global user.email i27153153@gmail.com
 
-3.上傳並認證 哈屁哈屁
+npm install express
+npm install body-parser
+npm install nedb-promises

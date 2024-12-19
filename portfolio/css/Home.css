@@ -1,9 +1,39 @@
-.space1{
-    height: 300px;
-    background-color: #000;
+body {
+    background: url('../images/starry sky.jpg')repeat !important;
+    background-size: 600px 600px !important; /* 將圖片縮小到 100px 寬和高 */
+    background-position: top center; /* 背景圖片從左上角開始重複 */
+    margin: 0;
+    padding: 0;
 }
 
-.space2{
-    height: 300px;
+#TOP{
+    background-color: black ;
+    height: 600px;
+}
 
+#Transition{
+    background: linear-gradient(0deg,transparent,#000000);
+    height: 1200px;
+}
+
+#star img{
+    z-index:20;
+    top: 0;
+    width: 50%;
+    height: 50%;
+}
+
+/* 輪轉因為使用了boostrap5，所以不需要有下面的基礎預設設定 */
+.-target {
+    position: relative; /* 需要定位才能移動 */
+    transform: translateX(-100px) scale(0.5); /* 向左偏移並縮小 */
+    opacity: 0; /* 初始透明度為 0 */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* 平滑過渡效果 */
+}
+
+#ABOUTME{
+    height: 300px;
+    text-align:center;
+    align-items: center;
+    color: white;
 }

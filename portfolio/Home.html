@@ -12,6 +12,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 </head>
 
@@ -45,6 +46,7 @@
     <div id="main_hidden">
         <!-- Carousel輪播 -->
         <div id="TOP">
+            <div class="space05"></div>
             <div id="carousel" class="carousel slide custom-bg" data-bs-ride="carousel">
 
                 <!-- Indicators/dots 控制鈕 -->
@@ -100,25 +102,25 @@
         <div class="space5"></div>
 
 
-        <div id="PORTFOLIO">
+        <div id="PORTFOLIO" class="col">
             <div class="space1"></div>
             <div class="portfolios">
                 <div class="portfolios-space"></div>
                 <h3>PORTFOLIO</h3>
                 <div class="portfolios-space"></div>
                 <div class="row">
-                    <div class="col">
-                        <img src="images/animate_title.gif">
-                        <p></p><p>作品分類1</p>
+                    <div v-for="item in portfolioCF" class="col-md-4 col-sm-6">
+                        <img src="'images/portfolioCF/'+item.Pimg" alt="{{item.Palt}}">
+                        <p></p><h5>{{item.Ptext}}</h5><p>{{item.img}}</p>
                     </div>
-                    <div class="col">
-                        <img src="images/illustration_title.jpg">
-                        <p></p><p>作品分類2</p>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="images/portfolioCF/illustration_title.jpg">
+                        <p></p><h5>作品分類2</h5><p>{{item.img}}</p>
                     </div>
-                    <div class="col">
+                    <!--<div class="col-md-4 col-sm-6">
                         <img src="images/animate_title.gif">
                         <p></p><p>作品分類3</p>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div class="space1"></div>
@@ -129,5 +131,6 @@
         </div>
     </div>
     <script src="js/Homejs.js"></script>
+    <script src="js/portfolio.js"></script>
 </body>
 </html>

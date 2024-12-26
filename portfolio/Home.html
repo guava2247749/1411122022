@@ -36,7 +36,7 @@
             <a class="nav-link text-white" href="#PORTFOLIO">PORTFOLIO</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link text-white" href="#">CONTACT</a>
+            <a class="nav-link text-white" href="#CONTACT">CONTACT</a>
             </li>
         </ul>
         </div>
@@ -105,19 +105,21 @@
         <div id="PORTFOLIO" class="col">
             <div class="space1"></div>
             <div class="portfolios">
-                <div class="portfolios-space"></div>
+                <div class="space05"></div>
                 <h3>PORTFOLIO</h3>
                 <div class="portfolios-space"></div>
-                <div class="row">
-                    <div v-for="item in portfolioCF" class="col-md-4 col-sm-6">
-                        <img src="'images/portfolioCF/'+item.Pimg" alt="{{item.Palt}}">
-                        <p></p><h5>{{item.Ptext}}</h5><p>{{item.img}}</p>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <img src="images/portfolioCF/illustration_title.jpg">
-                        <p></p><h5>作品分類2</h5><p>{{item.img}}</p>
+                <div id="PortfolioCF" class="row">
+                    <div v-for="item in portfoliojs" class="col-md-4 col-sm-6 ">
+                        <a href="#animate.html" class="PORTFOLIOtxt">
+                            <img src="images/portfolioCF/animate_title.gif" alt={{item.Pheading}}>
+                            <p></p><h5>{{item.Pheading}}</h5><p>{{item.Ptext}}</p>
+                        </a>
                     </div>
                     <!--<div class="col-md-4 col-sm-6">
+                        <img src="images/portfolioCF/illustration_title.jpg">
+                        <p></p><h5>作品分類2</h5><p>{{item.Ptext}}</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
                         <img src="images/animate_title.gif">
                         <p></p><p>作品分類3</p>
                     </div>-->
@@ -127,10 +129,32 @@
         </div>
 
         <div id="CONTACT">
-
+            <div class="space1"></div>
+            <h2 class="text-white">CONTACT</h2>
+            <div class="row">
+                <div class="space1"></div>
+                <a href="https://www.facebook.com/star.fei.7" class="col-md-4">
+                    <div>
+                        <img src="images/fb_icon.png">
+                        <p></p><h5 class="contactP">Fei Star</h5>
+                    </div>
+                </a>
+                <a href="https://x.com/feistar_0214" class="col-md-4">
+                    <div>
+                        <img src="images/X_icon.png">
+                        <p></p><h5 class="contactP">feistar.0214</h5>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/fei_star.0214_/profilecard/?igsh=MXY3ZXVkcTBqbjNuZg==" class="col-md-4">
+                    <div>
+                        <img src="images/Instagram_icon.png">
+                        <p></p><h5 class="contactP">fei_star.0214_</h5>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     <script src="js/Homejs.js"></script>
-    <script src="js/portfolio.js"></script>
+    <script src="js/portfolioVue.js"></script>
 </body>
 </html>

@@ -53,3 +53,15 @@ gsap.from("#PORTFOLIO",{
   opacity: 0.3,
   duration: 2
 });
+
+gsap.from("#CONTACT",{
+  scrollTrigger:{
+    trigger: "#PORTFOLIO",
+    end: "bottom",
+    scrub: 2, 
+    markers: false
+  },
+  y:'+=200',
+  opacity: 0,
+  duration: 2
+});

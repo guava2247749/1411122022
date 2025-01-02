@@ -59,7 +59,7 @@ gsap.from("#CONTACT",{
     trigger: "#CONTACT",
     end: "top",
     scrub: 2, 
-    markers: true
+    markers: false
   },
   y:'+=200',
   opacity: 0,

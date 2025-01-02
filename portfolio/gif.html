@@ -17,8 +17,27 @@
 
 </head>
 <body class="bg-dark p-3">
-    <h1 class="text-white">GIF</h1>
+    <div class="space05"></div>
+    <h1 class="bigtxt">GIF</h1>
+    <div class="space05"></div>
 
+    <div>
+        <div id="PortfolioCF" class="row">
+            <div v-for="item in portfoliojs" :key="item.imageUrl" class="col-md-4 col-sm-6 img-hover">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img :src="item.imageUrl" :alt="item.heading" class="img-fluid">
+                </div>
+                <div class="space05"></div>
+                <div>
+                    <h4 class="txtP text-white">{{item.heading}}</h4>
+                    <p class="txtP text-secondary">{{item.text}}</p>
+                </div>
+                <div class="space1"></div>
+            </div>
+
+        </div>
+    </div>
+<script src="js/GIFVue.js"></script>
 </body>
 <footer>
     <div>

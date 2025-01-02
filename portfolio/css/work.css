@@ -13,6 +13,12 @@ video {
     width: auto;
 }
 
+#PortfolioCF img{
+    width: 80%;
+    height: auto;
+    margin: 0;
+}
+
 .link{
     text-align:center;
 }

@@ -44,14 +44,22 @@ body {
 }
 
 #ABOUTME img{
-    width: 20%;
+    width: 60%;
     height: auto;
 }
 
-.textP{
-    color: grey;
+.AMtextP a{
+    color: white;
     margin: 0%;
+    text-decoration:none; 
 }
+
+.AMtextP a:hover{
+    color: #ff8989;
+    margin: 0%;
+    text-decoration:none; 
+}
+
 
 .designer-target {
     position: relative; /* 需要定位才能移動 */

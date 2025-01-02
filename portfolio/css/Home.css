@@ -85,6 +85,16 @@ body {
     text-decoration:none; 
 }
 
+.PORTFOLIOtxt a{
+    color: black;
+    text-decoration:none; 
+}
+
+.PORTFOLIOtxt a:hover{
+    color: black;
+    text-decoration:none; 
+}
+
 #CONTACT{
     height: 1000PX;
     text-align:center;
@@ -96,7 +106,12 @@ body {
     opacity:80%;
 }
 
-.contactP{
+.contactP a{
+    color: white;
+    text-decoration:none; 
+}
+
+.contactP a:hover{
     color: white;
     text-decoration:none; 
 }
@@ -117,6 +132,6 @@ body {
 .space4{
     height:400px;
 }
-.space4{
+.space5{
     height:500px;
 }

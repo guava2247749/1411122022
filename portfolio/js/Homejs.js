@@ -56,10 +56,10 @@ gsap.from("#PORTFOLIO",{
 
 gsap.from("#CONTACT",{
   scrollTrigger:{
-    trigger: "#PORTFOLIO",
-    end: "bottom",
+    trigger: "#CONTACT",
+    end: "top",
     scrub: 2, 
-    markers: false
+    markers: true
   },
   y:'+=200',
   opacity: 0,

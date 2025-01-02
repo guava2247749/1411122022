@@ -109,9 +109,9 @@
                 <h3>PORTFOLIO</h3>
                 <div class="portfolios-space"></div>
                 <div id="PortfolioCF" class="row">
-                    <div v-for="item in portfoliojs" class="col-md-4 col-sm-6 ">
+                    <div v-for="item in portfoliojs" :key="item.imageUrl" class="col-md-4 col-sm-6 ">
                         <a href="#animate.html" class="PORTFOLIOtxt">
-                            <img src="images/portfolioCF/animate_title.gif" alt={{item.Pheading}}>
+                            <img :src="item.imageUrl" :alt="item.Pheading">
                             <p></p><h5>{{item.Pheading}}</h5><p>{{item.Ptext}}</p>
                         </a>
                     </div>
@@ -128,12 +128,14 @@
             <div class="space1"></div>
         </div>
 
-        <div id="CONTACT">
+        <div class="space4"></div>
+
+        <div id="CONTACT" class="contactP">
             <div class="space1"></div>
             <h2 class="text-white">CONTACT</h2>
             <div class="row">
                 <div class="space1"></div>
-                <a href="https://www.facebook.com/star.fei.7" class="col-md-4">
+                <a href="https://www.facebook.com/star.fei.7" class="col-md-4 ">
                     <div>
                         <img src="images/fb_icon.png">
                         <p></p><h5 class="contactP">Fei Star</h5>

@@ -1,4 +1,47 @@
-.test a{
-text-decoration: none;    
-color:#d5d5d5;
+.bigtxt{
+    color: #fff;
+    text-align:center;
+}
+.txtP{
+    text-align:center;
+}
+
+
+video {
+    margin: 0;
+    height: 600px;
+    width: auto;
+}
+
+.link{
+    text-align:center;
+}
+
+.link a{
+    text-decoration: none;    
+    color:#d5d5d5;
+}
+.link a:hover{
+    text-decoration: none;    
+    color:#ff8989;
+}
+
+.space05{
+    height:50px;
+}
+
+.space1{
+    height:100px;
+}
+.space2{
+    height:200px;
+}
+.space3{
+    height:300px;
+}
+.space4{
+    height:400px;
+}
+.space5{
+    height:500px;
 }

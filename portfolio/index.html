@@ -24,23 +24,27 @@
     <nav class="navbar navbar-expand-sm bg-dark fixed-top">
 
         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         <!-- Links -->
-        <ul class="navbar-nav ">
-            <li class="nav-item">
-            <a class="nav-link text-white" href="#top">TOP</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link text-white" href="#ABOUTME">ABOUT ME</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link text-white" href="#PORTFOLIO">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link text-white" href="#CONTACT">CONTACT</a>
-            </li>
-        </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#top">TOP</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#ABOUTME">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#PORTFOLIO">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#CONTACT">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
     </nav>
 
     <div id="main_hidden">
@@ -99,7 +103,7 @@
                 
             </div>
         </div>
-        <div class="space5"></div>
+        <div class="space5h"></div>
 
 
         <div id="PORTFOLIO" class="col">
@@ -107,23 +111,17 @@
             <div class="portfolios">
                 <div class="space05"></div>
                 <h3>PORTFOLIO</h3>
-                <div class="portfolios-space"></div>
+                <div class="space05"></div>
+                <!--動態網頁作品區-->
                 <div id="PortfolioCF" class="row">
-                    <div v-for="item in portfoliojs" :key="item.imageUrl" class="col-md-4 col-sm-6 ">
-                        <a href="#animate.html" class="PORTFOLIOtxt">
-                            <img :src="item.imageUrl" :alt="item.Pheading">
+                    <div v-for="item in portfoliojs" :key="item.imageUrl" class="col-md-4 col-sm-6 img-hover">
+                        <a :href="item.Plink" class="PORTFOLIOtxt">
+                            <img :src="item.imageUrl" :alt="item.Pheading" class="img-fluid">
                             <p></p><h5>{{item.Pheading}}</h5><p>{{item.Ptext}}</p>
                         </a>
                     </div>
-                    <!--<div class="col-md-4 col-sm-6">
-                        <img src="images/portfolioCF/illustration_title.jpg">
-                        <p></p><h5>作品分類2</h5><p>{{item.Ptext}}</p>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <img src="images/animate_title.gif">
-                        <p></p><p>作品分類3</p>
-                    </div>-->
                 </div>
+                <div class="space05"></div>
             </div>
             <div class="space1"></div>
         </div>
@@ -135,21 +133,21 @@
             <h2 class="text-white">CONTACT</h2>
             <div class="row">
                 <div class="space1"></div>
-                <a href="https://www.facebook.com/star.fei.7" class="col-md-4 ">
+                <a href="https://www.facebook.com/star.fei.7" class="col">
                     <div>
-                        <img src="images/fb_icon.png">
+                        <img src="images/fb_icon.png" class="img-fluid">
                         <p></p><h5 class="contactP">Fei Star</h5>
                     </div>
                 </a>
-                <a href="https://x.com/feistar_0214" class="col-md-4">
+                <a href="https://x.com/feistar_0214" class="col">
                     <div>
-                        <img src="images/X_icon.png">
+                        <img src="images/X_icon.png" class="img-fluid">
                         <p></p><h5 class="contactP">feistar.0214</h5>
                     </div>
                 </a>
-                <a href="https://www.instagram.com/fei_star.0214_/profilecard/?igsh=MXY3ZXVkcTBqbjNuZg==" class="col-md-4">
+                <a href="https://www.instagram.com/fei_star.0214_/profilecard/?igsh=MXY3ZXVkcTBqbjNuZg==" class="col" >
                     <div>
-                        <img src="images/Instagram_icon.png">
+                        <img src="images/Instagram_icon.png" class="img-fluid ">
                         <p></p><h5 class="contactP">fei_star.0214_</h5>
                     </div>
                 </a>

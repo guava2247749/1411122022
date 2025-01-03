@@ -19,6 +19,12 @@ video {
     margin: 0;
 }
 
+#me_photo img{
+    width: 30%;
+    height: auto;
+    margin: 0;
+}
+
 .link{
     text-align:center;
 }

@@ -118,7 +118,7 @@
                 <div id="PortfolioCF" class="row">
                     <div v-for="item in portfoliojs" :key="item.imageUrl" class="col-md-4 col-sm-6 img-hover">
                         <a :href="item.Plink" class="PORTFOLIOtxt">
-                            <img :src="item.imageUrl" :alt="item.Pheading" class="img-fluid">
+                            <img :src="item.imageUrl" :alt="item.Pheading" class="img-fluid" loading="lazy">
                             <p></p><h5>{{item.Pheading}}</h5><p>{{item.Ptext}}</p>
                         </a>
                     </div>
@@ -137,19 +137,19 @@
                 <div class="space1"></div>
                 <a href="https://www.facebook.com/star.fei.7" class="col img-hover">
                     <div>
-                        <img src="images/fb_icon.png" class="img-fluid">
+                        <img src="images/fb_icon.png" class="img-fluid" loading="lazy">
                         <p></p><h5 class="contactP">Fei Star</h5>
                     </div>
                 </a>
                 <a href="https://x.com/feistar_0214" class="col img-hover">
                     <div>
-                        <img src="images/X_icon.png" class="img-fluid">
+                        <img src="images/X_icon.png" class="img-fluid" loading="lazy">
                         <p></p><h5 class="contactP">feistar.0214</h5>
                     </div>
                 </a>
                 <a href="https://www.instagram.com/fei_star.0214_/profilecard/?igsh=MXY3ZXVkcTBqbjNuZg==" class="col img-hover" >
                     <div>
-                        <img src="images/Instagram_icon.png" class="img-fluid ">
+                        <img src="images/Instagram_icon.png" class="img-fluid " loading="lazy">
                         <p></p><h5 class="contactP">fei_star.0214_</h5>
                     </div>
                 </a>

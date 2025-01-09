@@ -67,10 +67,10 @@ gsap.from("#CONTACT",{
 });
 
 // 處理 分頁 效果
-gsap.from("#WorkCF",{
+gsap.from("#AllWork",{
   scale: 0.8,
   opacity: 0,
-  duration: 3
+  duration: 1
 });
 
 

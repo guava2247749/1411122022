@@ -8,9 +8,7 @@ var DB = require("nedb-promises");
 var profolioIlust = DB.create(__dirname+"/profolioIlust.db");
 
 profolioIlust.insert([
-
 ])
-
 
 
 server.get("/portfolioIlust-data", (req,res)=>{

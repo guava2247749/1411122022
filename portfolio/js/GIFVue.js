@@ -25,7 +25,6 @@ createApp({
         };
     },
     mounted() {
-        // 使用 Fetch 从后端获取数据
         fetch("/portfolioGIF-data")
             .then((response) => {
                 if (!response.ok) {
@@ -34,10 +33,11 @@ createApp({
                 return response.json();
             })
             .then((data) => {
-                this.GifBD = data; // 将后端返回的数据赋值给 art2
+                console.log("Received data:", data); // 檢查返回資料
+                this.GifBD = data; // 將資料分配給 GifBD
             })
             .catch((error) => {
-                console.error("加载数据失败:", error);
+                console.error("加載數據失敗:", error);
             });
     }
-}).mount("#WorkCF");
+}).mount('.portfolioGIF-data');

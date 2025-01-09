@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Illustrate</title>
-
     <link rel="stylesheet" href="css/work.css" type="text/css">
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,11 +20,12 @@
     <h1 class="bigtxt">Illustrate</h1>
     <div class="space05"></div>
 
-    <div>
-        <div id="WorkCF" class="row">
-            <div id="img" v-for="item in portfoliojs" :key="item.imageUrl" class="col-md-6 col-sm-8 img-hover">
+    <div >
+        <div id="WorkCF" class="portfolioIlust-data">
+            <div class="row">
+            <div id="img" v-for="item in IlustBD" :key="item.imageUrl" class="col-md-6 col-sm-8 img-hover">
                 <div class="d-flex justify-content-center align-items-center">
-                    <img :src="item.imageUrl" :alt="item.heading" class="img-fluid" loading="lazy">
+                    <img :src="item.imageUrl" :alt="item.heading" class="img-fluid" >
                 </div>
                 <div class="space05"></div>
                 <div>
@@ -33,6 +33,7 @@
                     <p class="txtP text-secondary">{{item.text}}</p>
                 </div>
                 <div class="space1"></div>
+            </div>
             </div>
 
         </div>

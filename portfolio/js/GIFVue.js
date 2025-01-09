@@ -1,9 +1,10 @@
 const {createApp,ref}  = Vue;
 
+/*
 createApp({
     data() {
         return{
-            portfoliojs:[
+            GifBD:[
                 {imageUrl:'images/portfolioCF/GIF_0001.gif',alt:"GIF_0001",heading:"BONK!!",text:"日常被現實打擊"},
                 {imageUrl:'images/portfolioCF/GIF_0002.gif',alt:"GIF_0002",heading:"燕東夏生賀圖",text:"誰能想到禮物裡面有變態"},
                 {imageUrl:'images/portfolioCF/GIF_0003.gif',alt:"GIF_0003",heading:"芙露爾生賀圖",text:"芙芙超卡哇"},
@@ -15,3 +16,28 @@ createApp({
         }
     }
 }).mount("#WorkCF")
+*/
+
+createApp({
+    data() {
+        return{
+            GifBD:[ ]
+        };
+    },
+    mounted() {
+        // 使用 Fetch 从后端获取数据
+        fetch("/portfolioGIF-data")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                this.GifBD = data; // 将后端返回的数据赋值给 art2
+            })
+            .catch((error) => {
+                console.error("加载数据失败:", error);
+            });
+    }
+}).mount("#WorkCF");

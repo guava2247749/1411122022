@@ -14,12 +14,6 @@ profolioIlust.insert([
 ])
 
 profolioGif.insert([
-    {imageUrl:'images/portfolioCF/GIF_0001.gif',alt:"GIF_0001",heading:"BONK!!",text:"日常被現實打擊"},
-    {imageUrl:'images/portfolioCF/GIF_0002.gif',alt:"GIF_0002",heading:"燕東夏生賀圖",text:"誰能想到禮物裡面有變態"},
-    {imageUrl:'images/portfolioCF/GIF_0003.gif',alt:"GIF_0003",heading:"芙露爾生賀圖",text:"芙芙超卡哇"},
-    {imageUrl:'images/portfolioCF/GIF_0004.gif',alt:"GIF_0004",heading:"薯條控",text:"薯條夢女日常"},
-    {imageUrl:'images/portfolioCF/GIF_0006.gif',alt:"GIF_0006",heading:"平行時空的行星熱戀",text:"不小心OOC了哈哈..."},
-
 ])
 
 server.get("/portfolioIlust-data", (req,res)=>{

@@ -118,7 +118,7 @@
                 <div id="PortfolioCF" class="row">
                     <div v-for="item in portfoliojs" :key="item.imageUrl" class="col-md-4 col-sm-6 img-hover">
                         <a :href="item.Plink" class="PORTFOLIOtxt">
-                            <img :src="item.imageUrl" :alt="item.Pheading" class="img-fluid Illsize" loading="lazy">
+                            <img :src="item.imageUrl" :alt="item.Pheading" class="img-fluid" loading="lazy">
                             <p></p><h5>{{item.Pheading}}</h5><p>{{item.Ptext}}</p>
                         </a>
                     </div>

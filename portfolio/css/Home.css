@@ -123,8 +123,8 @@ body {
     margin-bottom: 10px;
 }
 
-#WorkCF img{
-    height: 50%;
+.imageSize{
+    height: 80%;
     width: auto;
 }
 

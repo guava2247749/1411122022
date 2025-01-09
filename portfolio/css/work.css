@@ -25,6 +25,11 @@ video {
     margin: 0;
 }
 
+#PORTFOLIO img{
+    width: 50%;
+    height: auto;
+}
+
 .link{
     text-align:center;
 }

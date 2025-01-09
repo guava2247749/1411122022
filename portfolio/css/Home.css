@@ -83,10 +83,7 @@ body {
     
 }
 
-#PORTFOLIO img{
-    width: 50%;
-    height: auto;
-}
+
 
 .img-hover {
     transition: transform 0.3s ease-in-out; /* 滑鼠移入時動畫 */

@@ -25,10 +25,11 @@ video {
     margin: 0;
 }
 
-#Illsize img{
+.Illsize img{
     height: 80%;
     width: auto;
 }
+
 .link{
     text-align:center;
 }

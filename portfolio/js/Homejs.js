@@ -66,19 +66,19 @@ gsap.from("#CONTACT",{
   duration: 2
 });
 
-// 處理 分頁作品img 效果
-/*gsap.from("#img",{
-  scrollTrigger:{
-      trigger: "#img",
-
-      end: "50px",
-      scrub: 2, 
-      markers: true
-  },
-  scale: 0.5,
+// 處理 分頁 效果
+gsap.from("#WorkCF",{
+  scale: 0.8,
   opacity: 0,
   duration: 3
-});*/
+});
+
+
+gsap.from("#animation",{
+  scale: 0.8,
+  opacity: 0,
+  duration: 1
+});
 
 //處理 About_Me  效果
 gsap.from("#About_Me",{

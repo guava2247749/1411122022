@@ -123,6 +123,11 @@ body {
     margin-bottom: 10px;
 }
 
+#workCF img{
+    height: 50%;
+    width: auto;
+}
+
 .contactP a{
     color: white;
     text-decoration:none; 

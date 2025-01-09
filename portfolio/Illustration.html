@@ -24,8 +24,8 @@
         <div id="WorkCF" class="portfolioIlust-data">
             <div class="row justify-content-center">
             <div id="img" v-for="item in IlustBD" :key="item.imageUrl" class="col-md-6 col-sm-8 img-hover">
-                <div class="d-flex justify-content-center align-items-center">
-                    <img :src="item.imageUrl" :alt="item.heading" class="img-fluid imageSize" loading="lazy">
+                <div class="d-flex justify-content-center align-items-center  imageSize">
+                    <img :src="item.imageUrl" :alt="item.heading" class="img-fluid" loading="lazy">
                 </div>
                 <div class="space05"></div>
                 <div>

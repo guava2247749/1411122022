@@ -25,11 +25,10 @@ video {
     margin: 0;
 }
 
-#PORTFOLIO img{
-    width: 50%;
-    height: auto;
+#Illsize img{
+    height: 80%;
+    width: auto;
 }
-
 .link{
     text-align:center;
 }

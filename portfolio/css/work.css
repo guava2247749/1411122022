@@ -26,8 +26,8 @@ video {
 }
 
 #AllWork img{
-    height: 80%;
-    width: auto;
+    height: auto;
+    width: 50%;
 }
 
 .link{
